@@ -147,7 +147,7 @@ void setup(){
   steppers.moveTo(positions);
   steppers.runSpeedToPosition();
   
-  positions_2[0] = 10500;
+  positions_2[0] = 1970;
   positions_2[1] = 16000;
   steppers_2.moveTo(positions_2);
   steppers_2.runSpeedToPosition();
@@ -222,112 +222,112 @@ void loop(){
                   
           for(int i = 0; i < 3; i++){
 
-            tankMove = tankMove + round(2.5 * t_ratio);
+            tankMove = tankMove + round(3 * t_ratio);
             positions[0] = round(0 * x_ratio);
             positions[1] = round((0 - murukku_interval) * y_ratio ) ;
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(0 * x_ratio);
             positions[1] = round((0 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-2 * x_ratio);
             positions[1] = round((-5 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(5 * x_ratio);
             positions[1] = round((-9 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(16 * x_ratio);
             positions[1] = round((-1 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(14 * x_ratio);
             positions[1] = round((15 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-1 * x_ratio);
             positions[1] = round((23 - murukku_interval) * y_ratio) ;
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-18 * x_ratio);
             positions[1] = round((14 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-26 * x_ratio);
             positions[1] = round((-3 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-19 * x_ratio);
             positions[1] = round((-18 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(-1 * x_ratio);
             positions[1] = round((-24 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(17 * x_ratio);
             positions[1] = round((-18 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(24 * x_ratio);
             positions[1] = round((-4 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(20 * x_ratio);
             positions[1] = round((8 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(1 * t_ratio);
             positions[0] = round(9 * x_ratio);
             positions[1] = round((5 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
             steppers.moveTo(positions);
             steppers.runSpeedToPosition();
             
-            tankMove = tankMove + round(0.5 * t_ratio);
+            tankMove = tankMove + round(-1 * t_ratio);
             positions[0] = 0;
             positions[1] = round((0 - murukku_interval) * y_ratio);
             positions[2] = tankMove;
@@ -336,7 +336,7 @@ void loop(){
         
             //Cut off murukku
             
-            positions_2[0] = 10000 * cutter_dir;            //cutter run with direction
+            positions_2[0] = 1970 * cutter_dir;            //cutter run with direction
             positions_2[1] = -3800 * murukku_layer_count;   //Lifter lower down
             steppers_2.moveTo(positions_2);
             steppers_2.runSpeedToPosition();
@@ -431,7 +431,7 @@ void loop(){
               cutter_dir = 1;
           }
 
-          positions_2[0] = 10000 * cutter_dir;                                
+          positions_2[0] = 1970 * cutter_dir;                                
           positions_2[1] = -3800 * chippi_layer;             //Lifter lower down
           steppers_2.moveTo(positions_2);
           steppers_2.runSpeedToPosition();
